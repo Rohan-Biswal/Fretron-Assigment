@@ -16,7 +16,7 @@ public class AppleCount{
             appleWeights.add(weight);
         }
         
-        Collections.sort(appleWeights, Collections.reverseOrder());
+        Collections.sort(appleWeights,Collections.reverseOrder());
         int ramAmount =50;
         int shamAmount =30;
         int rahimAmount =20;
