@@ -17,23 +17,23 @@ public class AppleCount{
         }
         
         Collections.sort(appleWeights, Collections.reverseOrder());
-        int ramAmount = 50;
-        int shamAmount = 30;
-        int rahimAmount = 20;
+        int ramAmount =50;
+        int shamAmount =30;
+        int rahimAmount =20;
         int totalAmount = ramAmount+shamAmount+rahimAmount;
         
-        double ramShare = ramAmount/(double)totalAmount;
-        double shamShare = shamAmount/(double)totalAmount;
-        double rahimShare = rahimAmount/(double)totalAmount;
-        int totalWeight = appleWeights.stream().mapToInt(Integer::intValue).sum();
+        double ramShare= ramAmount/(double)totalAmount;
+        double shamShare= shamAmount/(double)totalAmount;
+        double rahimShare= rahimAmount/(double)totalAmount;
+        int totalWeight= appleWeights.stream().mapToInt(Integer::intValue).sum();
         
-        double ramTargetWeight = totalWeight * ramShare;
-        double shamTargetWeight = totalWeight * shamShare;
-        double rahimTargetWeight = totalWeight * rahimShare;
+        double ramTargetWeight= totalWeight*ramShare;
+        double shamTargetWeight= totalWeight*shamShare;
+        double rahimTargetWeight= totalWeight*rahimShare;
 
-        ArrayList<Integer> ramApples = new ArrayList<>();
-        ArrayList<Integer> shamApples = new ArrayList<>();
-        ArrayList<Integer> rahimApples = new ArrayList<>();
+        ArrayList<Integer> ramApples =new ArrayList<>();
+        ArrayList<Integer> shamApples =new ArrayList<>();
+        ArrayList<Integer> rahimApples =new ArrayList<>();
 
         for (int weight : appleWeights) {
             if (ramTargetWeight>= weight) {
